@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h1> calculater</h1>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: darkgray;
+        }
+
+        table,
+        td {
+            border: 2px solid cadetblue;
+            width: 220px;
+            margin-left: 650px;
+            padding: 3px;
+
+        }
+
+        td:hover {
+            background-color: gray;
+            border-radius: 10px;
+            font-size: 25px;
+            border-color: red rgb(99, 18, 230);
+
+        }
+
+        input[type="button"] {
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+        }
+
+        input[type="button"]:hover {
+            background-color: aqua;
+            border-radius: 10px;
+        }
+
+        input[type="text"] {
+            height: 50px;
+            width: 160px;
+            font-size: 22px;
+            background-color: antiquewhite;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+<table>
+    <tr>
+        <td colspan="3"><input type="text" id="text"></td>
+        <td><input type="button" onclick="clr()" value="c"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7" onclick="Num('7')"></td>
+        <td><input type="button" value="8" onclick="Num('8')"></td>
+        <td><input type="button" value="9" onclick="Num('9')"></td>
+        <td><input type="button" value="*" onclick="handleOperators('*')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onclick="Num('4')"></td>
+        <td><input type="button" value="5" onclick="Num('5')"></td>
+        <td><input type="button" value="6" onclick="Num('6')"></td>
+        <td><input type="button" value="-" onclick="handleOperators('-')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" onclick="Num('1')"></td>
+        <td><input type="button" value="2" onclick="Num('2')"></td>
+        <td><input type="button" value="3" onclick="Num('3')"></td>
+        <td><input type="button" value="+" onclick="handleOperators('+')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="/" onclick="handleOperators('/')"></td>
+        <td><input type="button" value="0" onclick="Num('0')"></td>
+        <td><input type="button" value="." onclick="Num('.')"></td>
+        <td><input type="button" value="%" onclick="handleOperators('%')"></td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><input type="button" value="B" onclick="removeCharacter()" style="width: 109px;"></td>
+        <td colspan="2"><input type="button" value="=" onclick="Ans('=')" style="width: 109px"></td>
+    </tr>
+</table>
+<script src="script.js">
+
+</script>
+
+</body>
+
+</html>
